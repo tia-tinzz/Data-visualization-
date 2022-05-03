@@ -25,11 +25,21 @@ def home(request):
     chart=get_plot(x,y)
     return render(request,'home.html',{'chart':chart})
 
-'''def covidapi(request):
+def covidapi(request):
     #response=requests.get('https://api.covid19api.com/countries').json()
     dictionary = json.load(open('coviddaily.json', 'r'))
     #result_list = [[int(v) for k,v in d.items()] for d in dictionary]
+    '''a=dict(dictionary)
+    print(a)
+    #x={k for e in dictionary for (k,v) in e.items()}
+    #y={v for e in dictionary for (k,v) in e.items()}
+    print("helllo")
+    print(dictionary.keys())
+    print("ffygu")
+    for k,v in dictionary.items():
+        print()'''
     x = [k for k,v in dictionary.items()]
     y = [v for k,v in dictionary.items()]
+    print(x)
     chart=get_plot(x,y)
-    return render(request,'coviddata.html',{'chart':chart})'''
+    return render(request,'coviddata.html',{'chart':chart})

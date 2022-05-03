@@ -4,5 +4,5 @@ from.import views as v
 urlpatterns = [
     path('',v.home,name="home"),
     path('covid',v.covid,name='covid'),
-    #path('coviddata',v.covidapi,name='coviddata'),
+    path('coviddata',v.covidapi,name='coviddata'),
 ] 
