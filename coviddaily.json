@@ -1,0 +1,106 @@
+[
+    {
+        "Country": "Seychelles",
+        "Slug": "seychelles",
+        "ISO2": "SC"
+    },
+    {
+        "Country": "Tuvalu",
+        "Slug": "tuvalu",
+        "ISO2": "TV"
+    },
+    {
+        "Country": "Kiribati",
+        "Slug": "kiribati",
+        "ISO2": "KI"
+    },
+    {
+        "Country": "Saint Helena",
+        "Slug": "saint-helena",
+        "ISO2": "SH"
+    },
+    {
+        "Country": "San Marino",
+        "Slug": "san-marino",
+        "ISO2": "SM"
+    },
+    {
+        "Country": "Singapore",
+        "Slug": "singapore",
+        "ISO2": "SG"
+    },
+    {
+        "Country": "Cyprus",
+        "Slug": "cyprus",
+        "ISO2": "CY"
+    },
+    {
+        "Country": "Gambia",
+        "Slug": "gambia",
+        "ISO2": "GM"
+    },
+    {
+        "Country": "Iraq",
+        "Slug": "iraq",
+        "ISO2": "IQ"
+    },
+    {
+        "Country": "New Zealand",
+        "Slug": "new-zealand",
+        "ISO2": "NZ"
+    },
+    {
+        "Country": "Chad",
+        "Slug": "chad",
+        "ISO2": "TD"
+    },
+    {
+        "Country": "Iceland",
+        "Slug": "iceland",
+        "ISO2": "IS"
+    },
+    {
+        "Country": "Netherlands Antilles",
+        "Slug": "netherlands-antilles",
+        "ISO2": "AN"
+    },
+    {
+        "Country": "Pakistan",
+        "Slug": "pakistan",
+        "ISO2": "PK"
+    },
+    {
+        "Country": "Somalia",
+        "Slug": "somalia",
+        "ISO2": "SO"
+    },
+    {
+        "Country": "Belarus",
+        "Slug": "belarus",
+        "ISO2": "BY"
+    },
+    {
+        "Country": "Croatia",
+        "Slug": "croatia",
+        "ISO2": "HR"
+    },
+    {
+        "Country": "Belgium",
+        "Slug": "belgium",
+        "ISO2": "BE"
+    },
+    {
+        "Country": "Bulgaria",
+        "Slug": "bulgaria",
+        "ISO2": "BG"
+    },
+    {
+        "Country": "Germany",
+        "Slug": "germany",
+        "ISO2": "DE"
+    },
+    {
+        "Country": "Isle of Man",
+        "Slug": "isle-of-man",
+        "ISO2": "IM"
+    }]

@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1 style="text-align: center;">COVID STATES</h1>
+    <br>
+    <h4 style="text-align: left;">Datas from Json file</h4>
+    <br>
+    <img src="data:image/png;base64,{{chart|safe}}">
+{% endblock content %}
+
