@@ -1,8 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render,HttpResponse
 from .models import Sale
-from .utils import get_plot,get_barplot
+from .utils import get_plot,get_barplot,get_covidbarplot
 #from urllib.request import urlopen
 import requests
+
 #import ssl
 # Create your views here.
 #import matplotlib.pyplot as plt
@@ -26,7 +27,7 @@ def home(request):
     return render(request,'home.html',{'chart':chart})
 
 def covidapi(request):
-    #response=requests.get('https://api.covid19api.com/countries').json()
+    #response=requests.get('https://datausa.io/api/data?drilldowns=Nation&measures=Population').json()
     dictionary = json.load(open('coviddaily.json', 'r'))
     #result_list = [[int(v) for k,v in d.items()] for d in dictionary]
     '''a=dict(dictionary)
@@ -38,8 +39,14 @@ def covidapi(request):
     print("ffygu")
     for k,v in dictionary.items():
         print()'''
+    #labels = []
+    #values = []
     x = [k for k,v in dictionary.items()]
     y = [v for k,v in dictionary.items()]
-    print(x)
-    chart=get_plot(x,y)
+    chart=get_covidbarplot(x,y)
     return render(request,'coviddata.html',{'chart':chart})
+
+def population(request):
+    return render(request,'populationjs.html')
+
+

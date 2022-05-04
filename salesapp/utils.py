@@ -19,7 +19,7 @@ def get_plot(x,y):
     plt.figure(figsize=(10,5))
     plt.title('Sales of items')
     #sns.barplot(x,y)
-    plt.bar(x,y,color ='grey',width = 0.2)
+    plt.bar(x,y,color =['pink', 'violet', 'cyan'],width = 0.2)
     plt.xticks(rotation=45)
     plt.xlabel('Item')
     plt.ylabel('Price')
@@ -43,6 +43,7 @@ def get_barplot(x,y):
     plt.figure(figsize=(10,5))
     plt.title('Covid rates')
     sns.barplot(x,y)
+    #plt.pie(x,y)
     #plt.plot(x,y)
     plt.xticks(rotation=45)
     plt.xlabel('States')
@@ -51,3 +52,14 @@ def get_barplot(x,y):
     graph=get_bargraph()
     return graph
 
+def get_covidbarplot(x,y):
+    plt.switch_backend('AGG')
+    plt.figure(figsize=(10,5))
+    plt.title('Covid rates')
+    plt.bar(x,y,color =['pink', 'violet', 'cyan'],width = 0.2)
+    plt.xticks(rotation=45)
+    plt.xlabel('Country')
+    plt.ylabel('Covid rates')
+    plt.tight_layout()
+    graph=get_graph()
+    return graph
